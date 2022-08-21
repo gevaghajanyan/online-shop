@@ -5,6 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { CategoryModule } from './category/category.module';
 import { ProductsModule } from './products/products.module';
 import { HistoryModule } from './history/history.module';
+import { NotificationModule } from './notification/notification.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { HistoryModule } from './history/history.module';
     CategoryModule,
     ProductsModule,
     HistoryModule,
+    NotificationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
